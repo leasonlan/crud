@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.crud.mapper.MyuserMapper">
+
+	<select id="getuserCount" parameterType="java.util.Map" resultType="java.lang.Integer">
+		<if test="dataShow == 'dev'">
+			select count(*) from myuser m
+			where 1 = 1
+			<if test="classNumTotal!=null and classNumTotal!=''">
+			AND m.`classnum`=#{classNumTotal}
+			</if>
+		</if>
+	</select>
+
+	<select id="getUserInfo" parameterType="java.util.Map" resultType="java.util.Map">
+		select * from myuser m
+		where 1 = 1
+		<if test="id!=null and id!=''">
+			AND m.`id`=#{id}
+		</if>
+	</select>
+
+	<insert id="addUser" parameterType="com.example.crud.entity.Myuser">
+		insert into
+		myuser
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="username!=null">
+				  username,
+				</if>
+				<if test="password!=null">
+				  password,
+				</if>
+				<if test="name!=null">
+				  name,
+				</if>
+				<if test="classNum!=null">
+					classNum,
+				</if>
+		</trim>
+		<trim prefix="values(" suffix=")" suffixOverrides=",">
+				<if test="username!=null">
+					#{username},
+				</if>
+				<if test="password!=null">
+					#{password},
+				</if>
+				<if test="name!=null">
+					#{name},
+				</if>
+				<if test="classNum!=null">
+					#{classNum},
+				</if>
+		</trim>
+	</insert>
+
+	<delete id="deleteUser"  parameterType="java.util.Map" >
+		delete from
+			myuser
+			where
+			myuser.id=#{id}
+	</delete>
+
+	<update id="update" parameterType="com.example.crud.entity.Myuser">
+		<if test="id!=null and id!=''">
+		update myuser m
+		<set>
+			<if test="username!=null and username!=''">
+				username=#{username},
+			</if>
+			<if test="password!=null and password!=''">
+				password=#{password},
+			</if>
+			<if test="name!=null and name!=''">
+				name=#{name},
+			</if>
+			<if test="classNum!=null and classNum!=''">
+				classnum=#{classNum},
+			</if>
+		</set>
+		where m.id=#{id}
+		</if>
+	</update>
+	<select id="getUserNameandClassNum" parameterType="java.lang.Integer" resultType="java.util.Map">
+		select
+		name as mingzi,
+		classnum as banji
+		from myuser m
+		where m.id=#{userId}
+	</select>
+</mapper>

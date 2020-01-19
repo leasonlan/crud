@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Main-Class: com.example.crud.CrudApplication
+Class-Path: slf4j-api-1.7.29.jar spring-aop-5.1.11.RELEASE.jar spring-co
+ re-5.1.11.RELEASE.jar mapstruct-1.0.0.Final.jar spring-boot-starter-web
+ -2.1.10.RELEASE.jar jackson-annotations-2.9.10.jar jconsole.jar spring-
+ jdbc-5.1.11.RELEASE.jar spring-boot-starter-json-2.1.10.RELEASE.jar spr
+ ingfox-schema-2.6.1.jar spring-boot-starter-tomcat-2.1.10.RELEASE.jar j
+ boss-logging-3.3.3.Final.jar javax.annotation-api-1.3.2.jar springfox-s
+ wagger2-2.6.1.jar mybatis-spring-1.3.1.jar logback-classic-1.2.3.jar sp
+ ring-boot-starter-2.1.10.RELEASE.jar swagger-models-1.5.10.jar springfo
+ x-core-2.6.1.jar jackson-core-2.9.10.jar jackson-datatype-jdk8-2.9.10.j
+ ar log4j-api-2.11.2.jar spring-web-5.1.11.RELEASE.jar spring-boot-start
+ er-logging-2.1.10.RELEASE.jar jackson-datatype-jsr310-2.9.10.jar mybati
+ s-spring-boot-autoconfigure-1.3.0.jar druid-1.0.26.jar springfox-spi-2.
+ 6.1.jar log4j-to-slf4j-2.11.2.jar logback-core-1.2.3.jar swagger-annota
+ tions-1.5.10.jar classmate-1.4.0.jar jackson-databind-2.9.10.1.jar swag
+ ger-bootstrap-ui-1.8.1.jar validation-api-2.0.1.Final.jar springfox-swa
+ gger-common-2.6.1.jar tools.jar springfox-spring-web-2.6.1.jar springfo
+ x-swagger-ui-2.6.1.jar tomcat-embed-websocket-9.0.27.jar spring-beans-5
+ .1.11.RELEASE.jar spring-plugin-metadata-1.2.0.RELEASE.jar spring-boot-
+ starter-jdbc-2.1.10.RELEASE.jar jackson-module-parameter-names-2.9.10.j
+ ar hibernate-validator-6.0.18.Final.jar spring-boot-2.1.10.RELEASE.jar 
+ spring-expression-5.1.11.RELEASE.jar spring-context-5.1.11.RELEASE.jar 
+ tomcat-embed-core-9.0.27.jar guava-18.0.jar mysql-connector-java-5.1.32
+ .jar spring-tx-5.1.11.RELEASE.jar mybatis-spring-boot-starter-1.3.0.jar
+  snakeyaml-1.23.jar HikariCP-3.2.0.jar jul-to-slf4j-1.7.29.jar tomcat-e
+ mbed-el-9.0.27.jar mybatis-3.4.4.jar spring-webmvc-5.1.11.RELEASE.jar s
+ qljdbc4-4.0.jar spring-plugin-core-1.2.0.RELEASE.jar spring-boot-autoco
+ nfigure-2.1.10.RELEASE.jar spring-jcl-5.1.11.RELEASE.jar
+
